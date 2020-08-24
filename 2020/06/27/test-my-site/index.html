@@ -20,13 +20,16 @@
     var CONFIG = {"hostname":"blankor1.github.io","root":"/","scheme":"Pisces","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="test_my_site">
+  <meta name="description" content="这是一片用来测试的博客。 我将在这里面尝试一些md的操作和功能测试。大家可以不用管这一篇博客。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="test_my_site -- 这是一篇用来测试的博客">
 <meta property="og:url" content="https://blankor1.github.io/2020/06/27/test-my-site/index.html">
 <meta property="og:site_name" content="YuXia&#39;s Blog">
+<meta property="og:description" content="这是一片用来测试的博客。 我将在这里面尝试一些md的操作和功能测试。大家可以不用管这一篇博客。">
 <meta property="article:published_time" content="2020-06-28T01:10:46.000Z">
-<meta property="article:modified_time" content="2020-06-28T01:10:46.456Z">
+<meta property="article:modified_time" content="2020-08-24T00:30:58.885Z">
 <meta property="article:author" content="Yu Xia">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://blankor1.github.io/2020/06/27/test-my-site/">
@@ -42,7 +45,7 @@
   };
 </script>
 
-  <title>test_my_site | YuXia's Blog</title>
+  <title>test_my_site -- 这是一篇用来测试的博客 | YuXia's Blog</title>
   
 
 
@@ -170,6 +173,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-HTTP协议简介"><span class="nav-number">1.</span> <span class="nav-text">1. HTTP协议简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-持续连接和非持续连接"><span class="nav-number">2.</span> <span class="nav-text">2.持续连接和非持续连接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-非持续连接"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 非持续连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-持续连接"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 持续连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-HTTP的报文格式"><span class="nav-number">3.</span> <span class="nav-text">3. HTTP的报文格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-请求报文"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 请求报文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-响应报文"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 响应报文</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Cookie，Session和Token"><span class="nav-number">4.</span> <span class="nav-text">4. Cookie，Session和Token</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-Cookie"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 Cookie</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-Session"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 Session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-Token"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 Token</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-cookie和session的区别"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 cookie和session的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-HTTP1-x，HTTP2-0的区别"><span class="nav-number">5.</span> <span class="nav-text">5. HTTP1.x，HTTP2.0的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-HTTPS协议"><span class="nav-number">6.</span> <span class="nav-text">6. HTTPS协议</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -190,6 +194,10 @@
       <div class="site-state-item site-state-categories">
         <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
@@ -239,7 +247,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          test_my_site
+          test_my_site -- 这是一篇用来测试的博客
         </h1>
 
         <div class="post-meta">
@@ -250,6 +258,22 @@
               <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2020-06-27 21:10:46" itemprop="dateCreated datePublished" datetime="2020-06-27T21:10:46-04:00">2020-06-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-23 20:30:58" itemprop="dateModified" datetime="2020-08-23T20:30:58-04:00">2020-08-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+                </span>
             </span>
 
           
@@ -263,7 +287,70 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p>这是一片用来测试的博客。 我将在这里面尝试一些md的操作和功能测试。大家可以不用管这一篇博客。</p>
+<a id="more"></a>
+
+<p>@[TOC]</p>
+<h2 id="1-HTTP协议简介"><a href="#1-HTTP协议简介" class="headerlink" title="1. HTTP协议简介"></a>1. HTTP协议简介</h2><p>HTTP(HyperText Transfer Protocol)是超文本传输协议的简称。它定义了HTTP报文的结构和用户和服务器之间进行报文交换的格式。</p>
+<p><strong>·</strong> HTTP是一个建立在TCP协议之上的应用层协议，默认端口号为80。<br><strong>·</strong> HTTP是无状态协议，不保存关于客户的任何信息。</p>
+<h2 id="2-持续连接和非持续连接"><a href="#2-持续连接和非持续连接" class="headerlink" title="2.持续连接和非持续连接"></a>2.持续连接和非持续连接</h2><p>一个Web页面通常包括一个HTML基本文件和几个对象（如页面里面包含的图片等内容）。这时候，HTTP可以选择使用持续连接或者非持续连接来传输内容。（HTTP默认使用持续连接）</p>
+<h3 id="2-1-非持续连接"><a href="#2-1-非持续连接" class="headerlink" title="2.1 非持续连接"></a>2.1 非持续连接</h3><p>每一个请求/响应经过一个单独的TCP连接发送。一次请求/响应完成之后就断开TCP连接。</p>
+<p><strong>缺点：</strong></p>
+<ol>
+<li>需要给每一个请求响应建立一个全新的连接，会给服务器带来较大负担。</li>
+<li>总延迟较长。每一个传输的对象都需要经过两倍的RTT（Round Trip Time）才能到达（一个建立连接，一个传输文件）。</li>
+</ol>
+<h3 id="2-2-持续连接"><a href="#2-2-持续连接" class="headerlink" title="2.2 持续连接"></a>2.2 持续连接</h3><p>请求和响应经过相同的TCP连接发送。 如果一个连接一段时间没有被使用，服务器就会关闭这个连接。</p>
+<h2 id="3-HTTP的报文格式"><a href="#3-HTTP的报文格式" class="headerlink" title="3. HTTP的报文格式"></a>3. HTTP的报文格式</h2><h3 id="3-1-请求报文"><a href="#3-1-请求报文" class="headerlink" title="3.1 请求报文"></a>3.1 请求报文</h3><p>主要包含三个部分：请求行，首部行，实体体（Entity body）。</p>
+<p><strong>请求行：</strong><br>请求行是请求报文的第一行，格式如下：<br>&lt;方法&gt; &lt; URL&gt; &lt;版本号&gt;</p>
+<p>其中基本方法包括GET，POST，PUT，DELETE</p>
+<p><strong>GET和POST的区别：</strong></p>
+<ol>
+<li>GET的提交数据在URL里实体体为空，POST的提交数据在body中。</li>
+<li>GET提交URL有长度限制，POST没有</li>
+<li>回退刷新时GET是无害的，POST的数据会被重新提交（浏览器应该会通知）</li>
+<li>POST相对GET来说更安全一点，因为GET会直接将信息显示在URL上，如果有缓存URL可能直接得到如账号密码等信息。<br>但其实这两者都不是安全的，因为即使是POST也可以通过抓包来获取到body钟的内容。</li>
+</ol>
+<h3 id="3-2-响应报文"><a href="#3-2-响应报文" class="headerlink" title="3.2 响应报文"></a>3.2 响应报文</h3><p>主要包含三个部分：状态行，首部行，实体体</p>
+<p><strong>状态行：</strong><br>状态行是响应报文的第一行，格式如下：<br>&lt;版本&gt; &lt;状态码&gt; &lt;短语&gt;</p>
+<p>版本和请求报文中类似。<br>常用的状态码：<br>状态码  | 短语 | 意义<br>——– | —– |—-<br>200  | OK | 请求成功<br> 301 | Moved Premanently |请求对象永久移除<br>304  | Not Modified|可直接使用缓存文件<br>400 |Bad Request|客户端请求无法被服务器理解<br>401 |Unauthorized|请求未经授权<br>403| Forbidded|服务器拒接提供服务<br>404| Not Found|请求资源不存在<br>500| Internal Server Error|服务器发生错误</p>
+<h2 id="4-Cookie，Session和Token"><a href="#4-Cookie，Session和Token" class="headerlink" title="4. Cookie，Session和Token"></a>4. Cookie，Session和Token</h2><h3 id="4-1-Cookie"><a href="#4-1-Cookie" class="headerlink" title="4.1 Cookie"></a>4.1 Cookie</h3><p>web站点希望能够识别用户而使用cookie。用户访问服务器之后，服务器会返回一个cookie并被客户端记录下来。当用户在此访问这个服务器的时候，会使用这个cookie，服务器就可以利用它来得到用户之前留下的信息。</p>
+<p>利用这个功能可以实现如不登陆购物车商品记录，个性化推荐等功能</p>
+<h3 id="4-2-Session"><a href="#4-2-Session" class="headerlink" title="4.2 Session"></a>4.2 Session</h3><p>每一个用户会有一个不同的Sesion，可以在session中存放信息。在服务器端会创建一个session对象，产生一个sessionID来识别对象，并将这个sessionID放入cookie中发送给客户端。当客户端再次访问服务器的时候会包含这个sessionID，由服务器解析，从而对应上用户。</p>
+<p>session的实现是通常是依赖于cookie的，如果cookie被禁用，session也将无法使用。</p>
+<h3 id="4-3-Token"><a href="#4-3-Token" class="headerlink" title="4.3 Token"></a>4.3 Token</h3><p>Token是服务器端生成的一串字符串，以作为客户端进行请求的一个令牌。当第一次登陆后，服务器生成一个Token并返回给客户端。以后客户端只需要带上这个Token来请求数据即可，无需再次带上用户名和密码。</p>
+<p>Token一般用在三个地方：</p>
+<ol>
+<li>防止表单重复提交</li>
+<li>防止CSRF攻击（跨站点请求伪造）</li>
+<li>身份验证（单点登录）</li>
+</ol>
+<h3 id="4-4-cookie和session的区别"><a href="#4-4-cookie和session的区别" class="headerlink" title="4.4 cookie和session的区别"></a>4.4 cookie和session的区别</h3><ol>
+<li>cookie主要存放在客户端，保存的数据通常有限，session主要存放在服务器端。</li>
+<li>cookie只是实现session的其中一种方案，虽然是最常用的，但是并不是唯一的。</li>
+<li>保存在客户端的危险性较大。</li>
+</ol>
+<h2 id="5-HTTP1-x，HTTP2-0的区别"><a href="#5-HTTP1-x，HTTP2-0的区别" class="headerlink" title="5. HTTP1.x，HTTP2.0的区别"></a>5. HTTP1.x，HTTP2.0的区别</h2><p>相比于HTTP1， HTTP2.0主要有如下几点区别：</p>
+<ol>
+<li><p>多路复用<br>允许通过单一的HTTP2连接同时发送多个请求/响应。</p>
+</li>
+<li><p>二进制分帧</p>
+</li>
+<li><p>首部压缩<br>HTTP1中由于cookie和user agent等原因很容易发送首部膨胀，因此HTTP/2中使用HPACK算法进行首部压缩。</p>
+</li>
+<li><p>服务端推送<br>在 HTTP/2 中，服务器可以对客户端的一个请求发送多个响应。</p>
+</li>
+</ol>
+<h2 id="6-HTTPS协议"><a href="#6-HTTPS协议" class="headerlink" title="6. HTTPS协议"></a>6. HTTPS协议</h2><p>HTTPS（HyperText Transfer Protocol over Secure Socket Layer）可以理解为HTTP + SSL/TLS，通过SSL证书来验证服务器身份，并为客户端和服务器之间的通信加密。它的默认端口是443。</p>
+<p><strong>使用HTTPS的传输流程：</strong></p>
+<ol>
+<li>首先客户端通过URL访问服务器建立SSL连接。</li>
+<li>服务端收到客户端请求后，会将网站支持的证书信息（证书中包含公钥）传送一份给客户端。</li>
+<li>客户端的浏览器建立会话密钥，然后利用网站的公钥将会话密钥加密，并传送给服务器。</li>
+<li>服务器利用自己的私钥解密出会话密钥。</li>
+<li>服务器利用会话密钥加密与客户端之间的通信。</li>
+</ol>
+
     </div>
 
     
@@ -271,6 +358,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
 
         
 
