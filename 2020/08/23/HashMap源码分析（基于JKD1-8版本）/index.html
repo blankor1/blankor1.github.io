@@ -27,8 +27,9 @@
 <meta property="og:site_name" content="YuXia&#39;s Blog">
 <meta property="og:description" content="作为一个Java语言的使用者，HashMap是一个绕不开的话题。这段时间我准备完整的学习一遍HashMap的源码并将自己的收获记录一下。这是我记录的第一篇Java源码分析，有疏漏或者错误之处欢迎大家批评指正。">
 <meta property="article:published_time" content="2020-08-24T00:49:45.000Z">
-<meta property="article:modified_time" content="2020-08-24T00:51:08.858Z">
+<meta property="article:modified_time" content="2020-12-26T19:07:32.218Z">
 <meta property="article:author" content="Yu Xia">
+<meta property="article:tag" content="HashMap">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://blankor1.github.io/2020/08/23/HashMap%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%EF%BC%88%E5%9F%BA%E4%BA%8EJKD1-8%E7%89%88%E6%9C%AC%EF%BC%89/">
@@ -196,6 +197,12 @@
         <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
   </nav>
 </div>
   <div class="links-of-author motion-element">
@@ -253,10 +260,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-08-23 20:49:45 / Modified: 20:51:08" itemprop="dateCreated datePublished" datetime="2020-08-23T20:49:45-04:00">2020-08-23</time>
+              <time title="Created: 2020-08-23 20:49:45" itemprop="dateCreated datePublished" datetime="2020-08-23T20:49:45-04:00">2020-08-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-12-26 14:07:32" itemprop="dateModified" datetime="2020-12-26T14:07:32-05:00">2020-12-26</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -385,6 +398,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/HashMap/" rel="tag"># HashMap</a>
+          </div>
 
         
 
